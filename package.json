@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^2.1.2",
-    "@tanstack/react-query": "^5.52.1",
-    "@tanstack/react-query-devtools": "^5.52.1",
-    "clsx": "^2.1.1",
-    "formik": "^2.4.6",
-    "next": "14.2.5",
+    "@headlessui/react": "^1.7.17",
+    "@tanstack/react-query": "^5.13.4",
+    "@tanstack/react-query-devtools": "^5.13.5",
+    "clsx": "^2.0.0",
+    "formik": "^2.4.5",
+    "next": "14.0.5-canary.51",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -22,13 +22,13 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.4.16",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5",
+    "eslint-config-next": "14.0.5-canary.51",
     "eslint-config-prettier": "^9.1.0",
-    "postcss": "^8.4.41",
-    "prettier": "^3.3.3",
-    "tailwindcss": "^3.4.10",
+    "postcss": "^8.4.31",
+    "prettier": "^3.1.1",
+    "tailwindcss": "^3.3.5",
     "typescript": "^5"
   }
 }
