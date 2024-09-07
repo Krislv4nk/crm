@@ -6,7 +6,7 @@ export interface PageProps {}
 export default function Page({}: PageProps) {
   return (
     <>
-    <Header>Dashboard</Header>
-  </>
+      <Header>Dashboard</Header>
+    </>
   );
 }

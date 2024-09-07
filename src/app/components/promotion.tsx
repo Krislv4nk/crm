@@ -6,7 +6,7 @@ export interface PromotionProps {
   promotion: Promotion;
 }
 
-export default function Promotions({ promotion }: PromotionProps) {
+export default function Promotion({ promotion }: PromotionProps) {
   return (
     <div className="rounded overflow-hidden	bg-gray-100">
       <div className="relative w-full h-40 bg-gray-300">
