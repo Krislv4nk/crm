@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import clsx from 'clsx';
-import StatusLabel from '@/app/components/status-label';
+import StatusLabel from './status-label';
 import { Company } from '@/lib/api';
+import Link from 'next/link';
 
 export interface CompanyRowProps {
   company: Company;

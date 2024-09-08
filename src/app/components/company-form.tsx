@@ -2,17 +2,17 @@
 
 import React from 'react';
 import { Form, Formik } from 'formik';
-import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import Button from '@/app/components/button';
+import InputField from '@/app/components/input-field';
+import LogoUploader from '@/app/components/logo-uploader';
 import {
   CompanyStatus,
   createCompany,
   getCategories,
   getCountries,
 } from '@/lib/api';
-import Button from '@/app/components/button';
-import InputField from '@/app/components/input-field';
-import LogoUploader from '@/app/components/logo-uploader';
-import StatusLabel from '@/app/components/status-label';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import StatusLabel from './status-label';
 
 export type CompanyFieldValues = {
   title: string;
@@ -86,7 +86,7 @@ export default function CompanyForm({ onSubmit }: CompanyFormProps) {
               label="Status"
               placeholder="Status"
               name="status"
-            
+              as="select"
             >
               {(Object.values(CompanyStatus) as CompanyStatus[]).map(
                 (status) => (
@@ -101,7 +101,7 @@ export default function CompanyForm({ onSubmit }: CompanyFormProps) {
               label="Country"
               placeholder="Country"
               name="countryId"
-             
+              as="select"
             >
               {countries?.map((country) => (
                 <option key={country.id} value={country.id}>
@@ -117,7 +117,7 @@ export default function CompanyForm({ onSubmit }: CompanyFormProps) {
               label="Category"
               placeholder="Category"
               name="categoryId"
-             
+              as="select"
             >
               {categories?.map((category) => (
                 <option key={category.id} value={category.id}>
@@ -125,12 +125,6 @@ export default function CompanyForm({ onSubmit }: CompanyFormProps) {
                 </option>
               ))}
             </InputField>
-            <InputField
-              required
-              label="Joined date"
-              type="date"
-              name="joinedDate"
-            />
             <InputField
               required
               label="Description"

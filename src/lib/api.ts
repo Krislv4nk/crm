@@ -104,7 +104,6 @@ export const getPromotions = async (
     init,
   );
 };
-
 export const createCompany = async (
   data: Omit<Company, 'id' | 'hasPromotions'>,
   init?: RequestInit,

@@ -8,5 +8,10 @@ export interface PageProps {}
 
 export default function Page({}: PageProps) {
   const router = useRouter();
-  return <CompanyFormModal show={true} onClose={() => router.back()} />;
+  return (
+    <CompanyFormModal
+      show={true}
+      onClose={() => router.back()}
+    ></CompanyFormModal>
+  );
 }

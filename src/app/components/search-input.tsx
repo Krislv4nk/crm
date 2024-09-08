@@ -28,6 +28,7 @@ export default function SearchInput({
           src="/icons/magnifying-glass.svg"
           alt="search icon"
         />
+        .
       </button>
     </div>
   );

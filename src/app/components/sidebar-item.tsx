@@ -1,9 +1,9 @@
-import React from 'react';
+import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
-import clsx from 'clsx';
+import React from 'react';
 
-export interface SidebarItemProps {
+export interface SideBarItemProms {
   current?: boolean;
   pathname: string;
   src: string;
@@ -11,13 +11,13 @@ export interface SidebarItemProps {
   children: React.ReactNode;
 }
 
-export default function SidebarItem({
+export default function SideBarItem({
   current,
   pathname,
   src,
   alt,
   children,
-}: SidebarItemProps) {
+}: SideBarItemProms) {
   return (
     <li>
       <Link

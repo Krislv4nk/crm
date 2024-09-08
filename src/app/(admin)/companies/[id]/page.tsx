@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Header from '@/app/components/header';
 import { notFound } from 'next/navigation';
-import { dehydrate, HydrationBoundary } from '@tanstack/react-query';
-import { Company, getCompany, getPromotions } from '@/lib/api';
 import getQueryClient from '@/lib/utils/getQueryClient';
+import { Company, getCompany, getPromotions } from '@/lib/api';
+import { HydrationBoundary, dehydrate } from '@tanstack/react-query';
 import CompanyInfo from '@/app/components/company-info';
 import CompanyPromotions from '@/app/components/company-promotions';
 
@@ -32,7 +33,6 @@ export default async function Page({ params }: PageProps) {
   }
 
   const dehydratedState = dehydrate(queryClient);
-
   return (
     <HydrationBoundary state={dehydratedState}>
       <div className="py-6 px-10 grid grid-cols-12 gap-5">
