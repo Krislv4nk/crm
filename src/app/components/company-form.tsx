@@ -64,9 +64,9 @@ export default function CompanyForm({ onSubmit }: CompanyFormProps) {
     await mutateAsync({
       ...values,
       categoryTitle:
-        categories.find(({ id }) => id === values.categoryId)?.title ?? '',
+        categories?.find(({ id }) => id === values.categoryId)?.title ?? '',
       countryTitle:
-        countries.find(({ id }) => id === values.countryId)?.title ?? '',
+        countries?.find(({ id }) => id === values.countryId)?.title ?? '',
     });
 
     if (onSubmit) {
@@ -86,7 +86,7 @@ export default function CompanyForm({ onSubmit }: CompanyFormProps) {
               label="Status"
               placeholder="Status"
               name="status"
-              as="select"
+            
             >
               {(Object.values(CompanyStatus) as CompanyStatus[]).map(
                 (status) => (
@@ -101,7 +101,7 @@ export default function CompanyForm({ onSubmit }: CompanyFormProps) {
               label="Country"
               placeholder="Country"
               name="countryId"
-              as="select"
+             
             >
               {countries?.map((country) => (
                 <option key={country.id} value={country.id}>
@@ -117,7 +117,7 @@ export default function CompanyForm({ onSubmit }: CompanyFormProps) {
               label="Category"
               placeholder="Category"
               name="categoryId"
-              as="select"
+             
             >
               {categories?.map((category) => (
                 <option key={category.id} value={category.id}>
