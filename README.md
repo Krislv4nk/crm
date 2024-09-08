@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+ The CRM project was developed while studying the Next.js course.
 
-## Getting Started
 
-First, run the development server:
+<div style="display: flex; flex-direction: row; gap: 50px;">
+    <img src="./public/images/coverCRM.jpg" alt="Image 1" style="width: 40%; border: 1px solid #ddd; border-radius: 4px; padding: 5px;">
+    <img src="./public/images/coverCRM1.jpg" alt="Image 1" style="width: 40%; border: 1px solid #ddd; border-radius: 4px; padding: 5px;">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  A Customer Relationship Management (CRM) system built with Next.js to streamline customer interactions and enhance business processes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Usage
 
-## Learn More
+To add a new customer, click on the "Add Customer" button.
+Use the search functionality to filter customer data.
+Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `/dashboard` - Contains pages and components related to the Dashboard. This includes the main interface elements such as charts, tables, and logic for displaying key metrics and CRM data.
+- `/components` - Reusable React components. These are generic components used across different parts of the application, like buttons, forms, modals, etc.
+- `/api` - API routes. These endpoints handle server requests, interact with the database, and connect with other services.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+##Technologies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    Next.js
+    React
+    Tailwind CSS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Dependencies
+
+<a href="https://www.npmjs.com/package/@headlessui/react">
+    <img alt="@headlessui/react" src="https://img.shields.io/npm/v/@headlessui/react?color=%23111827&label=%40headlessui%2Freact&labelColor=%23E9D5FF&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/@tanstack/react-query">
+    <img alt="@tanstack/react-query" src="https://img.shields.io/npm/v/@tanstack/react-query?color=%23111827&label=%40tanstack%2Freact-query&labelColor=%23E9D5FF&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/@tanstack/react-query-devtools">
+    <img alt="@tanstack/react-query-devtools" src="https://img.shields.io/npm/v/@tanstack/react-query-devtools?color=%23111827&label=%40tanstack%2Freact-query-devtools&labelColor=%23E9D5FF&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/clsx">
+    <img alt="clsx" src="https://img.shields.io/npm/v/clsx?color=%23111827&label=clsx&labelColor=%23E9D5FF&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/formik">
+    <img alt="formik" src="https://img.shields.io/npm/v/formik?color=%23111827&label=formik&labelColor=%23E9D5FF&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/next">
+    <img alt="next" src="https://img.shields.io/npm/v/next?color=%23111827&label=next&labelColor=%23D9F99D&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/react">
+    <img alt="react" src="https://img.shields.io/npm/v/react?color=%23111827&label=react&labelColor=%23D9F99D&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/react-dom">
+    <img alt="react-dom" src="https://img.shields.io/npm/v/react-dom?color=%23111827&label=react-dom&labelColor=%23D9F99D&style=for-the-badge">
+</a>
+
+## DevDependencies
+
+<a href="https://www.npmjs.com/package/@types/node">
+    <img alt="@types/node" src="https://img.shields.io/npm/v/@types/node?color=%23111827&label=%40types%2Fnode&labelColor=%23E9D5FF&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/@types/react">
+    <img alt="@types/react" src="https://img.shields.io/npm/v/@types/react?color=%23111827&label=%40types%2Freact&labelColor=%23E9D5FF&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/@types/react-dom">
+    <img alt="@types/react-dom" src="https://img.shields.io/npm/v/@types/react-dom?color=%23111827&label=%40types%2Freact-dom&labelColor=%23E9D5FF&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/autoprefixer">
+    <img alt="autoprefixer" src="https://img.shields.io/npm/v/autoprefixer?color=%23111827&label=autoprefixer&labelColor=%23E9D5FF&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/eslint">
+    <img alt="eslint" src="https://img.shields.io/npm/v/eslint?color=%23111827&label=eslint&labelColor=%23E9D5FF&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/eslint-config-next">
+    <img alt="eslint-config-next" src="https://img.shields.io/npm/v/eslint-config-next?color=%23111827&label=eslint-config-next&labelColor=%23D9F99D&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/eslint-config-prettier">
+    <img alt="eslint-config-prettier" src="https://img.shields.io/npm/v/eslint-config-prettier?color=%23111827&label=eslint-config-prettier&labelColor=%23D9F99D&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/postcss">
+    <img alt="postcss" src="https://img.shields.io/npm/v/postcss?color=%23111827&label=postcss&labelColor=%23D9F99D&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/prettier">
+    <img alt="prettier" src="https://img.shields.io/npm/v/prettier?color=%23111827&label=prettier&labelColor=%23D9F99D&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/tailwindcss">
+    <img alt="tailwindcss" src="https://img.shields.io/npm/v/tailwindcss?color=%23111827&label=tailwindcss&labelColor=%23D9F99D&style=for-the-badge">
+</a>
+<a href="https://www.npmjs.com/package/typescript">
+    <img alt="typescript" src="https://img.shields.io/npm/v/typescript?color=%23111827&label=typescript&labelColor=%23D9F99D&style=for-the-badge">
+</a>
+
+##  Layout and Design
+The application's layout and design are implemented based on the  [Figma design](https://www.figma.com/design/dPmdjAc0qKNMCKwWiC33QZ/CRM?node-id=78-6586&t=P8aSgQ7ckIgyLoeN-0), ensuring a modern and user-friendly interface.
